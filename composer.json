@@ -1,15 +1,15 @@
 {
-    "name": "nereta/api-rest-flight",
+    "name": "colleua/api-rest-flight",
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Nereta\\ApiRestFlight\\": "src/"
+            "colleua\\ApiRestFlight\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "AntoineNeret",
-            "email": "AntoineNeret@protonmail.com"
+            "name": "ArthurColleu",
+            "email": "colleuarthur@gmail.com"
         }
     ],
     "require": {
