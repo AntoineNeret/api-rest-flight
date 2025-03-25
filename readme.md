@@ -22,10 +22,34 @@ Développer une API REST fonctionnelle qui permettra :
 Ouvrir un invite de commande, et lancer les commandes suivantes dans le répertoire où vous souhaitez mettre le projet.
 
 ```bash
-git clone https://github.com/AntoineNeret/TP_API_REST_FLIGHT.git
+git clone https://github.com/AntoineNeret/api-rest-flight.git
 cd TP_API_REST_FLIGHT
 composer install
 ```
 
 # Utilisation
 
+## Phase de test
+
+### Test sur le site 'Ciné App'
+Lancer un serveur web local :
+```
+php -S localhost:8000 -t api-rest-test
+```
+### Test sur le renvoie de l'api
+Pour voir ce que nous renvoie l'api rest :
+```
+php -S localhost:3000
+```
+Pour voir l'intégralité de la liste des films, taper dans l'URL:
+```
+localhost:3000/api/films
+```
+Pour voir les détails d'un film en particulier, taper dans l'URL:
+```
+localhost:3000/api/films/'id_du_film'/
+```
+Pour voir les séance d'un film en particulier, taper dans l'URL:
+```
+localhost:3000/api/films/'id_du_film'/seances
+```
