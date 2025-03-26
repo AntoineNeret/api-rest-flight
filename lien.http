@@ -1,0 +1,5 @@
+### GET request to example server
+
+GET http://localhost:3000/api/films/ajout/aa/aa/1:20:10/2020-02-21/https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Fw500%2FxId9zoiv5WPQOuxqykUDrlpmrUz.jpg/1/aa
+
+###

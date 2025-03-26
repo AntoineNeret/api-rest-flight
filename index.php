@@ -39,7 +39,7 @@ Flight::route('/api/films/@id/seance/delete', function(int $id){
     //Envoie un JSON qui contient le status de succès et le résultat de la fonction qui communique avec la base de données
     Flight::json(['status'=>'success', 'data'=>deleteSeanceFilm($id)]);
 });
-//Route pour ajouter un film à la base de données
+//Route pour ajouter un film à la base de données mais on ne peut pas mettre le lien de l'affiche dans le endpoint (on sait pas mettre un lien dans un lien)
 Flight::route('/api/films/ajout/@titre/@realisateur/@duree/@date_sortie/@affiche/@genre_id/@description', function(string $titre, string $realisateur, string $duree, string $date_sortie, string $affiche, int $genre_id, string $description){
     //Envoie un JSON qui contient le status de succès et le résultat de la fonction qui communique avec la base de données
     Flight::json(['status'=>'success', 'data'=>addFilm($titre, $realisateur, $duree, $date_sortie, $affiche, $genre_id, $description)]);
@@ -49,7 +49,7 @@ Flight::route('/api/genres/', function(){
     //Envoie un JSON qui contient le status de succès et le résultat de la fonction qui communique avec la base de données
     Flight::json(['status'=>'success', 'data'=>getGenres()]);
 });
-//Route pour modifier un film
+//Route pour modifier un film mais on ne peut pas mettre le lien de l'affiche dans le endpoint (on sait pas mettre un lien dans un lien  )
 Flight::route('/api/films/modif/@id/@titre/@realisateur/@duree/@date_sortie/@affiche/@genre_id/@description', function(int $id,string $titre, string $realisateur, string $duree, string $date_sortie, string $affiche, int $genre_id, string $description){
     //Envoie un JSON qui contient le status de succès et le résultat de la fonction qui communique avec la base de données
     Flight::json(['status'=>'success', 'data'=>modifyFilm($id , $titre, $realisateur, $duree, $date_sortie, $affiche, $genre_id, $description)]);
